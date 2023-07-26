@@ -3,9 +3,15 @@
   "site_title": "Seun Owoyemi",
   "site_description": "Personal site",
   "site_keywords": [
-    "Business",
-    "Marketing",
-    "Entrepreneurship"
+    {
+      "keyword": "Business"
+    },
+    {
+      "keyword": "Marketing"
+    },
+    {
+      "keyword": "Entrepreneurship"
+    }
   ],
   "posts_per_page": 5,
   "twitter_account": "@owoblow_junior",
