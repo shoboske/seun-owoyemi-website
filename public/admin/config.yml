@@ -30,7 +30,7 @@ collections:
           - label: "Site keywords"
             name: "site_keywords"
             widget: "list"
-            summary: "{{fields.keyword.keyword}}"
+            summary: "{{fields.keyword}}"
             fields:
               - label: Keyword
                 name: keyword
