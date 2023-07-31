@@ -1,8 +1,9 @@
+import Clients from "../components/Clients";
 import Layout from "../components/Layout";
+import Portfolio from "../components/Portfolio";
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
-import { SocialList } from "../components/SocialList";
 
 export default function Index() {
   return (
@@ -10,53 +11,34 @@ export default function Index() {
       <BasicMeta url={"/"} />
       <OpenGraphMeta url={"/"} />
       <TwitterCardMeta url={"/"} />
-      <div className="container">
-        <div>
-          <h1>
-            Hi, We're Next.js & Netlify<span className="fancy">.</span>
-          </h1>
-          <span className="handle">@nextjs-netlify-blog</span>
-          <h2>A blog template with Next.js and Netlify.</h2>
-          <SocialList />
-        </div>
-      </div>
-      <style jsx>{`
-        .container {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex: 1 1 auto;
-          padding: 0 1.5rem;
-        }
-        h1 {
-          font-size: 2.5rem;
-          margin: 0;
-          font-weight: 500;
-        }
-        h2 {
-          font-size: 1.75rem;
-          font-weight: 400;
-          line-height: 1.25;
-        }
-        .fancy {
-          color: #15847d;
-        }
-        .handle {
-          display: inline-block;
-          margin-top: 0.275em;
-          color: #9b9b9b;
-          letter-spacing: 0.05em;
-        }
+        <div className="overflow-hidden">
+          <div className="container content-space-t-4 content-space-b-3">
+            <div className="row justify-content-lg-between align-items-md-center">
+              <div className="col-md-6 col-lg-5 mb-7 mb-md-0">
+                <div className="mb-5">
+                  <span className="text-cap">Who am I?</span>
+                  <h1 className="display-4 mb-3">Seun Owoyemi</h1>
+                  <p className="lead">I aim to deliver the most outstanding work in every business.</p>
+                </div>
 
-        @media (min-width: 769px) {
-          h1 {
-            font-size: 3rem;
-          }
-          h2 {
-            font-size: 2.25rem;
-          }
-        }
-      `}</style>
+                <div className="d-grid d-sm-flex gap-3">
+                  <a className="btn btn-primary btn-transition" href="#caseStudies">Contact me</a>
+                  <a className="btn btn-link" href="#">Learn more <i className="bi-chevron-right small ms-1"></i></a>
+                </div>
+              </div>
+
+              <div className="col-md-6">
+                <div className="position-relative">
+                  <img className="img-fluid rounded-2" src="/assets/svg/components/card-10.svg" alt="Image Description" />
+                  <div className="position-absolute top-0 end-0 w-100 h-100 bg-soft-primary rounded-2 zi-n1 mt-5 me-n5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <Clients />
+        <Portfolio />
     </Layout>
   );
 }

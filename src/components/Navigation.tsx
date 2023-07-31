@@ -1,92 +1,76 @@
-import Link from "next/link";
 import { useRouter } from "next/router";
-import Burger from "./Burger";
 import { useState } from "react";
 
 export default function Navigation() {
   const router = useRouter();
   const [active, setActive] = useState(false);
   return (
-    <>
-      <Burger active={active} onClick={() => setActive(!active)} />
-      <div className={"container " + (active ? "active" : "")}>
-        <ul>
-          <li>
-            <Link href="/">
-              <span className={router.pathname === "/" ? "active" : null}>about</span>
-            </Link>
-          </li>
-          <li>
-            <Link href="/posts">
-              <span
-                className={
-                  router.pathname.startsWith("/posts") ? "active" : null
-                }
-              >
-                blog
-              </span>
-            </Link>
-          </li>
-        </ul>
-        <style jsx>
-          {`
-            .container {
-              width: 0;
-            }
-            ul {
-              opacity: 0;
-              width: 100%;
-              height: 100vh;
-              text-align: right;
-              list-style: none;
-              margin: 0;
-              padding: 0;
-              position: fixed;
-              top: 0;
-              background-color: #fff;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              z-index: 1;
-              transform: translateY(100%);
-              transition: opacity 200ms;
-            }
-            .active ul {
-              opacity: 1;
-              transform: translateY(0);
-            }
-            li {
-              margin-bottom: 1.75rem;
-              font-size: 2rem;
-              padding: 0 1.5rem 0 0;
-            }
-            li:last-child {
-              margin-bottom: 0;
-            }
-            .active {
-              color: #222;
-            }
+    <header id="header" className="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide"
+      data-hs-header-options='{
+            "fixMoment": 1000,
+            "fixEffect": "slide"
+          }'>
 
-            @media (min-width: 769px) {
-              .container {
-                width: 7rem;
-                display: block;
-              }
-              ul {
-                opacity: 1;
-                width: 7rem;
-                top: auto;
-                display: block;
-                transform: translateY(0);
-              }
-              li {
-                font-size: 1rem;
-                padding: 0;
-              }
-            }
-          `}
-        </style>
+      <div className="container navbar-topbar">
+        <nav className="js-mega-menu navbar-nav-wrap">
+
+          <button className="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#topbarNavDropdown" aria-controls="topbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="d-flex justify-content-between align-items-center small">
+              <span className="navbar-toggler-text">Topbar</span>
+
+              <span className="navbar-toggler-default">
+                <i className="bi-chevron-down ms-2"></i>
+              </span>
+              <span className="navbar-toggler-toggled">
+                <i className="bi-chevron-up ms-2"></i>
+              </span>
+            </span>
+          </button>
+
+
+          <div id="topbarNavDropdown" className="navbar-nav-wrap-collapse collapse navbar-collapse navbar-topbar-collapse">
+            <div className="navbar-toggler-wrapper">
+              <div className="navbar-topbar-toggler d-flex justify-content-between align-items-center">
+                <span className="navbar-toggler-text small">Topbar</span>
+
+
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topbarNavDropdown" aria-controls="topbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <i className="bi-x"></i>
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
-    </>
+
+      <div className="container">
+        <nav className="js-mega-menu navbar-nav-wrap">
+          {/* <a className="navbar-brand" href="./index.html" aria-label="Front">
+            <img className="navbar-brand-logo" src="./assets/svg/logos/logo.svg" alt="Logo" />
+          </a> */}
+
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-default">
+              <i className="bi-list"></i>
+            </span>
+            <span className="navbar-toggler-toggled">
+              <i className="bi-x"></i>
+            </span>
+          </button>
+
+          <div className="collapse navbar-collapse pt-2" id="navbarNavDropdown">
+            <div className="navbar-absolute-top-scroller">
+              <ul className="navbar-nav">
+
+                <li className="nav-item">
+                  <a className="btn btn-primary btn-transition" href="#contact">Contact me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
   );
 }
