@@ -30,7 +30,7 @@ function Portfolio() {
                           <figcaption className="blockquote-footer">
                             <div className="d-flex align-items-center">
                               <div className="flex-shrink-0">
-                                <img className="avatar avatar-circle" src="./assets/img/160x160/img3.jpg" alt="Image Description" />
+                                <img className="avatar avatar-circle" src="/assets/img/160x160/img3.jpg" alt="Image Description" />
                               </div>
 
                               <div className="flex-grow-1 ms-3">

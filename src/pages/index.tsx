@@ -1,4 +1,5 @@
 import Clients from "../components/Clients";
+import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import Portfolio from "../components/Portfolio";
 import BasicMeta from "../components/meta/BasicMeta";
@@ -39,6 +40,8 @@ export default function Index() {
 
         <Clients />
         <Portfolio />
+
+        <Footer />
     </Layout>
   );
 }
