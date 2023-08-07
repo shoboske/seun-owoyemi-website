@@ -91,7 +91,7 @@ function ContactForm() {
 
                                                 <div className="mb-3">
                                                     <label className="form-label visually-hidden" htmlFor="hireUsFormCompanyName">Company name <span className="form-label-secondary">(Optional)</span></label>
-                                                    <input type="text" className="form-control form-control-lg" name="hireUsFormNameCompanyName" id="hireUsFormCompanyName" placeholder="Htmlstream" aria-label="Htmlstream" />
+                                                    <input type="text" className="form-control form-control-lg" name="hireUsFormNameCompanyName" id="hireUsFormCompanyName" placeholder="Company Name" aria-label="Company Name" />
                                                 </div>
 
                                             </div>
