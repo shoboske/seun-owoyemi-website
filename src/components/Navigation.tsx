@@ -2,8 +2,8 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 
 export default function Navigation() {
-  const router = useRouter();
-  const [active, setActive] = useState(false);
+
+
   return (
     <header id="header" className="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide"
       data-hs-header-options='{
@@ -46,9 +46,9 @@ export default function Navigation() {
 
       <div className="container">
         <nav className="js-mega-menu navbar-nav-wrap">
-          {/* <a className="navbar-brand" href="./index.html" aria-label="Front">
-            <img className="navbar-brand-logo" src="./assets/svg/logos/logo.svg" alt="Logo" />
-          </a> */}
+          <a className="navbar-brand fw-semibold navbar-brand-logo" href="/" aria-label="Front">
+            Seun Owoyemi
+          </a>
 
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-default">

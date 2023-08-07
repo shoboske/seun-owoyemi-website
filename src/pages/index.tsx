@@ -1,4 +1,5 @@
 import Clients from "../components/Clients";
+import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import Portfolio from "../components/Portfolio";
@@ -23,14 +24,14 @@ export default function Index() {
                 </div>
 
                 <div className="d-grid d-sm-flex gap-3">
-                  <a className="btn btn-primary btn-transition" href="#caseStudies">Contact me</a>
-                  <a className="btn btn-link" href="#">Learn more <i className="bi-chevron-right small ms-1"></i></a>
+                  <a className="btn btn-primary btn-transition" href="#contact">Contact me</a>
+                  <a className="btn btn-link" href="#portfolio">Learn more <i className="bi-chevron-right small ms-1"></i></a>
                 </div>
               </div>
 
               <div className="col-md-6">
                 <div className="position-relative">
-                  <img className="img-fluid rounded-2" src="/assets/svg/components/card-10.svg" alt="Image Description" />
+                  <img className="img-fluid rounded-2" src="/assets/img/seun-landing-image.jpeg" alt="Image Description" />
                   <div className="position-absolute top-0 end-0 w-100 h-100 bg-soft-primary rounded-2 zi-n1 mt-5 me-n5"></div>
                 </div>
               </div>
@@ -40,7 +41,7 @@ export default function Index() {
 
         <Clients />
         <Portfolio />
-
+        <ContactForm />
         <Footer />
     </Layout>
   );
