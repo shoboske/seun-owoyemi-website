@@ -55,6 +55,9 @@ function ContactForm() {
                                         <div hidden>
                                             <input name="bot-field" />
                                         </div>
+
+                                        <input type="hidden" name="form-name" value="contact form" />
+
                                         <div className="row gx-3">
                                             <div className="col-sm-6">
 
