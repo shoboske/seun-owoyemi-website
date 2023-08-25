@@ -90,7 +90,7 @@ collections:
         file: "meta/clients.yml"
         description: "List of clients"
         fields:
-          - name: client
+          - name: clients
             label: Clients
             label_singular: "Client"
             widget: list
