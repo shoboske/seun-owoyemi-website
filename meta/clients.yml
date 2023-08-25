@@ -1,4 +1,8 @@
 clients:
-  - name: "Kibris Order"
-    logo: "./assets/svg/brands/kibris-order-dark.svg"
-    website: "https://kibrisorder.com"
+  - name: Kibris Order
+    logo: ./assets/svg/brands/kibris-order-dark.svg
+    website: https://kibrisorder.com
+client:
+  - website: https://kibrisorder.com
+    name: Kibris Order
+    logo: /images/kibris-order-dark.svg
