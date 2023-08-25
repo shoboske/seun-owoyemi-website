@@ -1,5 +1,5 @@
 {
-  "base_url": "https://seun-owoyemi.netlify.app",
+  "base_url": "https://seunowoyemi.com",
   "site_title": "Seun Owoyemi",
   "site_description": "Personal site",
   "site_keywords": [
@@ -11,12 +11,8 @@
     },
     {
       "keyword": "Entrepreneurship"
-    },
-    {
-      "keyword": "editable"
     }
   ],
   "posts_per_page": 5,
-  "twitter_account": "@owoblow_junior",
-  "github_account": "@shoboske"
+  "twitter_account": "@owoblow_junior"
 }

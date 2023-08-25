@@ -1,32 +1,21 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { listClients } from '../lib/clients';
 
 function Clients() {
+
+    const clients = listClients();
+
     return (
         <div className="container">
 
             <div className="js-swiper-hero-clients swiper text-center">
                 <Swiper slidesPerView={3}>
-                    <SwiperSlide>
-                        <img className="avatar avatar-lg avatar-4x3" src="./assets/svg/brands/kibris-order-dark.svg" alt="Logo" />
-                    </SwiperSlide>
-
-                    <SwiperSlide >
-                        <img className="avatar avatar-lg avatar-4x3" src="./assets/svg/brands/forbes-dark.svg" alt="Logo" />
-                    </SwiperSlide>
-
-                    <SwiperSlide >
-                        <img className="avatar avatar-lg avatar-4x3" src="./assets/svg/brands/mailchimp-dark.svg" alt="Logo" />
-                    </SwiperSlide>
-
-                    <SwiperSlide >
-                        <img className="avatar avatar-lg avatar-4x3" src="./assets/svg/brands/layar-dark.svg" alt="Logo" />
-                    </SwiperSlide>
-
-                    <SwiperSlide >
-                        <img className="avatar avatar-lg avatar-4x3" src="./assets/svg/brands/hubspot-dark.svg" alt="Logo" />
-                    </SwiperSlide>
-
+                    {clients && clients.map((client, index) =>
+                        <SwiperSlide key={index}>
+                            <img className="avatar avatar-lg avatar-4x3" src={client.logo} alt={client.name} />
+                        </SwiperSlide>
+                    )}
                 </Swiper>
             </div>
         </div>

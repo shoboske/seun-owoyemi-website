@@ -38,9 +38,6 @@ collections:
           - label: "Twitter account"
             name: "twitter_account"
             widget: "string"
-          - label: "GitHub account"
-            name: "github_account"
-            widget: "string"
 
   - name: "meta"
     label: "Meta"
@@ -87,6 +84,33 @@ collections:
                 name: "name"
                 widget: "string"
                 hint: "Tag name for displaying on the site"
+     
+      - name: "clients"
+        label: "Clients"
+        file: "meta/clients.yml"
+        description: "List of clients"
+        fields:
+          - name: client
+            label: Clients
+            label_singular: "Client"
+            widget: list
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: true
+                hint: "The client name"
+              - label: "Logo"
+                name: "logo"
+                widget: "image"
+                required: true
+                hint: "The logo of the client preferably svg"
+              - label: "Website"
+                name: "website"
+                widget: "string"
+                default: "#"
+                required: false
+                hint: "The TLD website of the client preferably starts with 'https'"
 
   - name: "posts"
     label: "Posts"
