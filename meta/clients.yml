@@ -2,3 +2,6 @@ clients:
   - name: Kibris Order
     logo: ./assets/svg/brands/kibris-order-dark.svg
     website: "https://kibrisorder.com "
+  - website: https://appxchangr.com
+    name: Xchangr
+    logo: /images/xchangr-logo-dark.svg
