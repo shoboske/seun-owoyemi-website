@@ -18,20 +18,20 @@ function ContactForm() {
 
                             <figure>
                                 <div className="mb-4">
-                                    <img className="avatar avatar-xl avatar-4x3" src="./assets/svg/brands/mailchimp-white.svg" alt="Logo" />
+                                    <img className="avatar avatar-xl avatar-4x3" src="./assets/svg/brands/xchangr-logo-light.svg" alt="Xchangr" />
                                 </div>
 
-                                <blockquote className="blockquote blockquote-light">“ I worked with him many times and he delivered just like he said he would. I experienced superb growth in my business ”</blockquote>
+                                <blockquote className="blockquote blockquote-light">“ Talking to Seun really set my idea in motion. He thought about the best possible ways to bring the idea to reality ”</blockquote>
 
                                 <figcaption className="blockquote-footer blockquote-light">
                                     <div className="d-flex align-items-center">
                                         <div className="flex-shrink-0">
-                                            <img className="avatar avatar-circle" src="./assets/img/160x160/img10.jpg" alt="Image Description" />
+                                            <img className="avatar avatar-circle" src="./assets/img/160x160/michael.jpg" alt="Image Description" />
                                         </div>
 
                                         <div className="flex-grow-1 ms-3">
-                                            Lida Reidy
-                                            <span className="blockquote-footer-source">Project Manager | Mailchimp</span>
+                                            Michael Shobowale
+                                            <span className="blockquote-footer-source">Software Developer</span>
                                         </div>
                                     </div>
                                 </figcaption>
