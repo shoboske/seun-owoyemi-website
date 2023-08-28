@@ -22,7 +22,7 @@ export default function Navigation() {
       <div className="container">
         <nav className="js-mega-menu navbar-nav-wrap border-bottom">
           <a className="navbar-brand fw-semibold navbar-brand-logo" href="/" aria-label="Seun Owoyemi">
-            <img src="./favicon.ico" alt="site logo" />
+            <img src="/favicon.ico" alt="site logo" />
           </a>
 
           <div className="collapse navbar-collapse pt-2" id="navbarNavDropdown">
