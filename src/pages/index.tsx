@@ -8,6 +8,15 @@ import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 
 export default function Index() {
+
+  const scrollToView = (id: string) => {
+    const component = document.getElementById(id); 
+    window.scrollTo({
+      top: component.offsetTop,
+      behavior: "smooth"
+    });
+  }
+  
   return (
     <Layout>
       <BasicMeta url={"/"} />
@@ -24,8 +33,8 @@ export default function Index() {
                 </div>
 
                 <div className="d-grid d-sm-flex gap-3">
-                  <a className="btn btn-primary btn-transition" href="#contact">Contact me</a>
-                  <a className="btn btn-link" href="#portfolio">Learn more <i className="bi-chevron-right small ms-1"></i></a>
+                  <span className="btn btn-primary btn-transition" onClick={() => scrollToView("contact")}>Contact me</span>
+                  <span className="btn btn-link" onClick={() => scrollToView("portfolio")}>Learn more <i className="bi-chevron-right small ms-1"></i></span>
                 </div>
               </div>
 
