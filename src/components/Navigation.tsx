@@ -3,6 +3,14 @@ import { useState } from "react";
 
 export default function Navigation() {
 
+   const scrollToView = (id: string) => {
+    const component = document.getElementById(id); 
+    window.scrollTo({
+      top: component.offsetTop,
+      behavior: "smooth"
+    });
+  }
+  
 
   return (
     <header id="header" className="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide"
@@ -64,7 +72,7 @@ export default function Navigation() {
               <ul className="navbar-nav">
 
                 <li className="nav-item">
-                  <a className="btn btn-primary btn-transition" href="#contact">Contact me</a>
+                  <span className="btn btn-primary btn-transition" onClick={() => scrollToView("contact")}>Contact me</span>
                 </li>
               </ul>
             </div>
