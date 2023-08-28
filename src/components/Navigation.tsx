@@ -20,7 +20,7 @@ export default function Navigation() {
           }'>
 
       <div className="container navbar-topbar">
-        <nav className="js-mega-menu navbar-nav-wrap">
+        <nav className="border-bottom js-mega-menu navbar-nav-wrap">
 
           <button className="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#topbarNavDropdown" aria-controls="topbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="d-flex justify-content-between align-items-center small">
@@ -41,11 +41,9 @@ export default function Navigation() {
               <div className="navbar-topbar-toggler d-flex justify-content-between align-items-center">
                 <span className="navbar-toggler-text small">Topbar</span>
 
-
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topbarNavDropdown" aria-controls="topbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <i className="bi-x"></i>
                 </button>
-
               </div>
             </div>
           </div>
@@ -54,18 +52,9 @@ export default function Navigation() {
 
       <div className="container">
         <nav className="js-mega-menu navbar-nav-wrap">
-          <a className="navbar-brand fw-semibold navbar-brand-logo" href="/" aria-label="Front">
-            Seun Owoyemi
+          <a className="navbar-brand fw-semibold navbar-brand-logo" href="/" aria-label="Seun Owoyemi">
+            <img src="./favicon.ico" />
           </a>
-
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-default">
-              <i className="bi-list"></i>
-            </span>
-            <span className="navbar-toggler-toggled">
-              <i className="bi-x"></i>
-            </span>
-          </button>
 
           <div className="collapse navbar-collapse pt-2" id="navbarNavDropdown">
             <div className="navbar-absolute-top-scroller">
