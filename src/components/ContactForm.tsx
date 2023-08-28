@@ -17,10 +17,7 @@ function ContactForm() {
 
 
                             <figure>
-                                <div className="mb-4">
-                                    <img className="avatar avatar-xl avatar-4x3" src="./assets/svg/brands/xchangr-logo-light.svg" alt="Xchangr" />
-                                </div>
-
+                             
                                 <blockquote className="blockquote blockquote-light">“ Talking to Seun really set my idea in motion. He thought about the best possible ways to bring the idea to reality ”</blockquote>
 
                                 <figcaption className="blockquote-footer blockquote-light">
